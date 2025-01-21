@@ -1,0 +1,29 @@
+<!-- skin.xml -->
+<krpano>
+    <!-- Настройки интерфейса -->
+    <!-- Кнопка полноэкранного режима -->
+    <layer name="fullscreen_button" url="buttons/fullscreen.png" align="righttop" x="-10" y="10" onclick="togglefullscreen();" />
+
+    <!-- Навигация -->
+    <layer name="nav_left" url="buttons/left.png" align="left" x="10" y="0" onclick="lookto(-90, null, null, 1.0);" />
+    <layer name="nav_right" url="buttons/right.png" align="right" x="-10" y="0" onclick="lookto(90, null, null, 1.0);" />
+    <layer name="nav_up" url="buttons/up.png" align="top" x="0" y="10" onclick="lookto(null, 90, null, 1.0);" />
+    <layer name="nav_down" url="buttons/down.png" align="bottom" x="0" y="-10" onclick="lookto(null, -90, null, 1.0);" />
+
+    <!-- Зум -->
+    <layer name="zoom_in" url="buttons/zoom_in.png" align="rightmiddle" x="-50" y="-25" onclick="zoomIn();" />
+    <layer name="zoom_out" url="buttons/zoom_out.png" align="rightmiddle" x="-50" y="25" onclick="zoomOut();" />
+
+    <!-- Меню -->
+    <layer name="menu_button" url="buttons/menu.png" align="lefttop" x="10" y="10" onclick="togglemenu();" />
+    <layer name="menu" bgcolor="0x000000" bgalpha="0.7" keep="true" align="bottom" height="50" visible="false">
+        <layer name="scene1_button" url="buttons/scene1.png" align="left" x="10" onclick="loadscene(s1, null, MERGE);" />
+        <layer name="scene2_button" url="buttons/scene2.png" align="left" x="70" onclick="loadscene(s2, null, MERGE);" />
+        <layer name="scene3_button" url="buttons/scene3.png" align="left" x="130" onclick="loadscene(s3, null, MERGE);" />
+        <layer name="scene4_button" url="buttons/scene4.png" align="left" x="190" onclick="loadscene(s4, null, MERGE);" />
+        <layer name="scene5_button" url="buttons/scene5.png" align="left" x="250" onclick="loadscene(s5, null, MERGE);" />
+    </layer>
+
+    <!-- Звук -->
+    <layer name="sound_toggle" url="buttons/sound.png" align="righttop" x="-50" y="10" onclick="toggleSound();" />
+</krpano>

@@ -1,0 +1,13 @@
+<!-- config.xml -->
+<krpano>
+    <!-- Глобальные параметры -->
+    <display depthbuffer="true" />
+    <view fovtype="MFOV" fov="120" fovmin="70" fovmax="140" />
+    <startup scene="s1" />
+
+    <!-- Логотип -->
+    <layer name="startup_logo" url="logo.png" align="center" onclick="loadscene(s1, null, MERGE);" />
+
+    <!-- Загрузка сцен -->
+    <progress showonload="true" />
+</krpano>

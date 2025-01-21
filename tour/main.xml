@@ -1,0 +1,51 @@
+<!-- main.xml -->
+<krpano>
+    <!-- Основные настройки -->
+    <include url="config.xml" />
+    <include url="skin.xml" />
+
+    <!-- Сцены -->
+    <scene name="s1" title="1" onstart="" thumburl="img/1.tiles/thumb.jpg" lat="9.15995370" lng="99.85922073" heading="0.0">
+        <view hlookat="140.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="fullrange" />
+        <preview url="img/1.tiles/preview.jpg" />
+        <image>
+            <cube url="img/1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+        </image>
+    </scene>
+    
+    <scene name="s2" title="2" thumburl="img/2.tiles/thumb.jpg" lat="9.15995370" lng="99.85922073" heading="0.0">
+        <view hlookat="140.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="fullrange" />
+        <preview url="img/2.tiles/preview.jpg" />
+        <image>
+            <cube url="img/2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+        </image>
+    </scene>
+
+    <scene name="s3" title="3" thumburl="img/3.tiles/thumb.jpg" lat="9.15995370" lng="99.85922073" heading="0.0">
+        <view hlookat="140.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="fullrange" />
+        <preview url="img/3.tiles/preview.jpg" />
+        <image>
+            <cube url="img/3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+        </image>
+    </scene>
+
+    <scene name="s4" title="4" thumburl="img/4.tiles/thumb.jpg" lat="9.15995370" lng="99.85922073" heading="0.0">
+        <view hlookat="140.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="fullrange" />
+        <preview url="img/4.tiles/preview.jpg" />
+        <image>
+            <cube url="img/4.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+        </image>
+    </scene>
+
+    <scene name="s5" title="5" thumburl="img/5.tiles/thumb.jpg" lat="9.15995370" lng="99.85922073" heading="0.0">
+        <view hlookat="140.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="fullrange" />
+        <preview url="img/5.tiles/preview.jpg" />
+        <image>
+            <cube url="img/5.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048" />
+        </image>
+    </scene>
+
+    <!-- Навигация между сценами через Hotspots -->
+    <hotspot name="to_scene2" style="hotspot_style" ath="10" atv="-5" linkedscene="s2" />
+    <hotspot name="to_scene3" style="hotspot_style" ath="20" atv="-5" linkedscene="s3" />
+</krpano>
